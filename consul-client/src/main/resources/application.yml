@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: consul-client
+  cloud:
+    consul:
+      port: 8500
+      host: localhost
+      discovery:
+        service-name: consul-client
+server:
+  port: 8051

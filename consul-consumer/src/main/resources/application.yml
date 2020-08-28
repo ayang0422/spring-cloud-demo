@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: consul-consumer
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+
+
+server:
+  port: 8052
