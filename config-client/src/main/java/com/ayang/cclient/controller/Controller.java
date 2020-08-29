@@ -19,6 +19,7 @@ public class Controller {
 
     @RequestMapping("/test")
     private String test(){
+        System.out.println(pro);
         return pro;
     }
 
