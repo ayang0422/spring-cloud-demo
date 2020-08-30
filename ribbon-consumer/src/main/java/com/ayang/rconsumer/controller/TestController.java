@@ -1,6 +1,7 @@
 package com.ayang.rconsumer.controller;
 
 import com.ayang.api.HelloApi;
+import com.ayang.rconsumer.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,6 +19,10 @@ import javax.annotation.Resource;
 @RestController
 public class TestController {
 
+
+    @Autowired
+    private TestService testService;
+
     @Autowired
     private RestTemplate restTemplate;
 
@@ -32,6 +37,6 @@ public class TestController {
 
     @RequestMapping("testHelloByFeign")
     public String testHelloByFeign(){
-        return helloApi.testHello();
+        return testService.testHelloByFeign();
     }
 }

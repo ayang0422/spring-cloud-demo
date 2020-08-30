@@ -8,4 +8,4 @@ spring:
       discovery:
         service-name: consul-client
 server:
-  port: 8052
+  port: 8051

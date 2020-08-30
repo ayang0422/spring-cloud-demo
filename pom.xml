@@ -29,6 +29,7 @@
         <module>eureka-comsumer</module>
         <module>eureka-service</module>
         <module>ribbon-consumer</module>
+        <module>consul-client-hystrix</module>
 
     </modules>
 
