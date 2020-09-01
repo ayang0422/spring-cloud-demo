@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+
+server:
+  port: 2003
+
+
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: localhost
+
+zuul:
+  routes:
+    api-a:
+      path: /api-a/*
+      serviceId: consul-client
+
+    api-b:
+      path: /api-b/*
+      serviceId: consul-consumer
+

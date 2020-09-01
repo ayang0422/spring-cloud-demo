@@ -9,3 +9,9 @@ spring:
         service-name: consul-client
 server:
   port: 8051
+
+management:
+  endpoints:
+    web:
+      exposure:
+        exclude: hystrix.stream

@@ -13,8 +13,8 @@
 
     <groupId>com.ayang</groupId>
     <artifactId>spring-cloud-demo20200826</artifactId>
-    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <properties>
         <spring-cloud.version>Hoxton.SR7</spring-cloud.version>
@@ -30,6 +30,8 @@
         <module>eureka-service</module>
         <module>ribbon-consumer</module>
         <module>consul-client-hystrix</module>
+        <module>hystrix-dashboard</module>
+        <module>zuul-service</module>
 
     </modules>
 

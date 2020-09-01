@@ -16,3 +16,7 @@ logging:
     com:
       ayang:
         api: debug
+
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: localhost
