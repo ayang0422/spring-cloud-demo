@@ -32,6 +32,8 @@
         <module>consul-client-hystrix</module>
         <module>hystrix-dashboard</module>
         <module>zuul-service</module>
+        <module>docker-demo</module>
+        <module>mq-demo</module>
 
     </modules>
 

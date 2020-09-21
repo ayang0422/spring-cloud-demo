@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: mq-demo
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    ###开启消息确认机制 confirms
+    virtual-host: /
+    publisher-returns: true
+    #采用手动应答
+    listener:
+      simple:
+        acknowledge-mode: manual
+
+server:
+  port: 8057

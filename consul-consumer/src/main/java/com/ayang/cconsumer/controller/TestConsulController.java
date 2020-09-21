@@ -46,4 +46,10 @@ public class TestConsulController {
         String testResult = new RestTemplate().getForObject(helloUrl, String.class);
         return testResult;
     }
+
+
+
+
+
+
 }
