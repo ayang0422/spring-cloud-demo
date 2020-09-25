@@ -1,0 +1,22 @@
+
+
+spring:
+  application:
+    name: mysql-jpa
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # url: jdbc:mysql://rm-2ze5j3r3ztd8135o3125010.mysql.rds.aliyuncs.com:3306/test01?charset=utf8
+    url: jdbc:mysql://rm-2ze5j3r3ztd8135o32o.mysql.rds.aliyuncs.com:3306/test01?charset=utf8
+    username: test01
+    password: test01!Q2w
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 2
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 3003

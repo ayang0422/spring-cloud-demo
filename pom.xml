@@ -34,6 +34,7 @@
         <module>zuul-service</module>
         <module>docker-demo</module>
         <module>mq-demo</module>
+        <module>mysql-jpa</module>
 
     </modules>
 
