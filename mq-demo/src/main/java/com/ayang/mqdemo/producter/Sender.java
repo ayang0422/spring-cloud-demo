@@ -30,16 +30,17 @@ public class Sender {
     }
 
 
-        @RequestMapping("/send")
+    @RequestMapping("/send")
     public String send() {
+        
         //发送多个延时消息
-        rabbitmqPublish.sendTimeoutMsg("hello1" , "routingKey1" ,40);
-        rabbitmqPublish.sendTimeoutMsg("hello2" , "routingKey2" ,20);
-        rabbitmqPublish.sendTimeoutMsg("hello3" , "routingKey1" ,60);
+        rabbitmqPublish.sendTimeoutMsg("hello1", "routingKey1", 40);
+        rabbitmqPublish.sendTimeoutMsg("hello2", "routingKey2", 20);
+        rabbitmqPublish.sendTimeoutMsg("hello3", "routingKey1", 60);
 
         //发送普通消息
-        rabbitmqPublish.sendMsg(RabbitConfig.Order_Pay_Queue_Name , "weixin");
-        rabbitmqPublish.sendMsg(RabbitConfig.Order_Pay_Queue_Name , "alipay");
+        rabbitmqPublish.sendMsg(RabbitConfig.Order_Pay_Queue_Name, "weixin");
+        rabbitmqPublish.sendMsg(RabbitConfig.Order_Pay_Queue_Name, "alipay");
 
         return "success";
     }

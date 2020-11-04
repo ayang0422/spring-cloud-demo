@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: elk-log-demo
+  kafka:
+    consumer:
+      bootstrap-servers: 192.168.10.109:9092
+server:
+  port: 2008
+
+logging:
+  config: classpath:logback-spring.xml
